@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   createBrowserRouter,
   Link,
   Outlet,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 const ErrorPage = () => (
-  <div style={{ textAlign: "center", fontSize: "50px" }}>
+  <div style={{ textAlign: 'center', fontSize: '50px' }}>
     404 Page Not Found.
   </div>
 );
@@ -16,14 +16,14 @@ export const createAppRouter = () => {
   return createBrowserRouter(
     [
       {
-        path: "/",
+        path: '/',
         element: (
           <>
             <div
               style={{
-                display: "flex",
-                flexDirection: "row",
-                gap: "20px",
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '20px',
               }}
             >
               <Link to="/">Home</Link>
@@ -37,12 +37,12 @@ export const createAppRouter = () => {
         errorElement: <ErrorPage />,
         children: [
           { index: true, element: <div>Home</div> },
-          { path: "about", element: <div>About</div> },
-          { path: "users", element: <div>Users</div> },
+          { path: 'about', element: <div>About</div> },
+          { path: 'users', element: <div>Users</div> },
         ],
       },
     ],
-    { basename: "/my-app" }
+    { basename: '/my-app' }
   );
 };
 
