@@ -7,9 +7,7 @@ import {
 } from 'react-router-dom';
 
 const ErrorPage = () => (
-  <div style={{ textAlign: 'center', fontSize: '50px' }}>
-    404 Page Not Found.
-  </div>
+  <div style={{ textAlign: 'center', fontSize: '50px' }}>Page Not Found.</div>
 );
 
 export const createAppRouter = () => {
