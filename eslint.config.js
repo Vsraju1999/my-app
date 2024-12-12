@@ -14,7 +14,6 @@ export default [
         document: 'readonly',
         window: 'readonly',
         HTMLElement: 'readonly',
-        // Add any other browser globals you might need
       },
     },
     plugins: {
@@ -27,9 +26,11 @@ export default [
       },
     },
     rules: {
-      // Example rules
       'react/react-in-jsx-scope': 'off',
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_' },
+      ],
     },
   },
 ];
