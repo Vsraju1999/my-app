@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 const ErrorPage = () => (
-  <div style={{ textAlign: 'center', fontSize: '50px' }}>
+  <div style={{ textAlign: 'center', fontSize: '30px' }}>
     404 Page Not Found.
   </div>
 );
