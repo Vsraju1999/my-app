@@ -6,6 +6,12 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
+const ErrorPage = () => (
+  <div style={{ textAlign: 'center', fontSize: '50px' }}>
+    404 Page Not Found.
+  </div>
+);
+
 export const createAppRouter = () => {
   return createBrowserRouter(
     [
@@ -28,6 +34,7 @@ export const createAppRouter = () => {
             <Outlet />
           </>
         ),
+        errorElement: <ErrorPage />,
         children: [
           { index: true, element: <div>Home</div> },
           { path: 'about', element: <div>About</div> },
